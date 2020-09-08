@@ -1,0 +1,30 @@
+// 1. Set your own initial variables
+
+// update fonts
+$family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+// update colors
+
+
+// 2. Set the derived variables
+$primary: #B93506;
+$info: #2CC5FF;
+
+// 3. Setup your Custom Colors
+
+// $linkedin: #0077b5;
+// $linkedin-invert: findColorInvert($linkedin);
+// $twitter: #55acee;
+// $twitter-invert: findColorInvert($twitter);
+// $github: #333;
+// $github-invert: findColorInvert($github);
+
+// 5. Add new color variables to the color map.
+
+// @import "sass/utilities/derived-variables";
+
+// $addColors: (
+//   "twitter":($twitter, $twitter-invert),
+//   "linkedin": ($linkedin, $linkedin-invert),
+//   "github": ($github, $github-invert)
+// );
+// $colors: map-merge($colors, $addColors);
