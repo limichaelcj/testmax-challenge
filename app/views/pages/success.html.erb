@@ -1,10 +1,16 @@
 <%= render "shared/banner/image" %>
 
 <section class="container is-desktop">
-  <%= render layout: "shared/banner/card" do %>
-    <header class="card-header">
-      Success
-    </header>
+  <%= render layout: "shared/banner/card", locals: { class: "flex-center flex-column" } do %>
+    <div class="card-content is-half-width flex-column flex-center has-text-centered">
+      <%= image_tag 'icon-success.png', class: "image is-96x96" %>
+      <h1 class="is-family-secondary is-size-2 has-text-weight-bold mt-4">
+        We'll see you then!
+      </h1>
+      <p class="is-size-5 mt-4">
+        Thank you for signing up for the <strong>LSAT Basics Webinar</strong> on Tuesday, Sept 15, 2020
+      </p>
+    </div>
   <% end %>
 </section>
 
