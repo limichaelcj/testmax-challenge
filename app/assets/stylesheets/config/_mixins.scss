@@ -1,0 +1,6 @@
+// single breakpoint at bulma tablet size
+@mixin breakpoint {
+  @include tablet {
+    @content;
+  }
+}

@@ -11,17 +11,30 @@ $banner-card-offset: 18rem;
 
 .banner-card-container {
   position: relative;
-  height: $banner-card-height - $banner-card-offset;
-  margin-bottom: 6rem;
+  height: auto;
+  margin-bottom: 6rem - $banner-card-offset;
+
+  @include breakpoint {
+    height: $banner-card-height - $banner-card-offset;
+    margin-bottom: 6rem;
+  }
 }
 
 .banner-card {
-  position: absolute;
+  position: relative;
   top: -$banner-card-offset;
   left: 0;
   border-radius: 8px;
   width: 100%;
-  height: $banner-card-height;
+  height: auto;
+  min-height: $banner-card-height;
+
+  @include breakpoint {
+    position: absolute;
+    top: -$banner-card-offset;
+    left: 0;
+    height: $banner-card-height;
+  }
 
   .columns {
     .column:not(:first-of-type) {
@@ -35,15 +48,32 @@ $banner-card-offset: 18rem;
   }
 
   &.graphic-bg {
-    background-image: url(graphic-background-element.jpg);
-    background-position: left center;
-    background-size: contain;
+    background:
+      linear-gradient(transparent, transparent 40%, #{$white} 52%, #{$white}),
+      url(graphic-background-element.jpg),
+      $white;
+    background-size: auto;
+    background-position: left top;
     background-repeat: no-repeat;
+
+    @include breakpoint {
+      background:
+        url(graphic-background-element.jpg),
+        $white;
+      background-size: contain;
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
 
     .columns {
       .column:first-of-type {
-        padding-left: $desktop * .15 !important;
+        padding-left: 30%;
+
+        @include breakpoint {
+          padding-left: $desktop * .15 !important;
+        }
       }
     }
+
   }
 }
