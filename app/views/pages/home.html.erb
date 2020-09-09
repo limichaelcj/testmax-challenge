@@ -1,8 +1,8 @@
-<%= render 'shared/banner' %>
+<%= render 'shared/banner/image' %>
 
-<div class="container landing banner-offset">
+<section class="container is-desktop">
 
-  <div class="card landing graphic-bg">
+  <%= render layout: 'shared/banner/card', locals: { class: 'graphic-bg' } do %>
     <header>
       <h2 class="px-2 py-4 has-text-centered has-text-weight-bold">
         Sign Up for Our Free Webinar
@@ -27,6 +27,6 @@
         </div>
       </div>
     </div>
-  </div>
+  <% end %>
 
-</div>
+</section>
