@@ -28,6 +28,11 @@ $banner-card-offset: 18rem;
     }
   }
 
+  .is-half-width {
+    width: $desktop / 2;
+    max-width: 100%;
+  }
+
   &.graphic-bg {
     background-image: url(graphic-background-element.jpg);
     background-position: left center;
@@ -39,6 +44,5 @@ $banner-card-offset: 18rem;
         padding-left: $desktop * .15 !important;
       }
     }
-
   }
 }
