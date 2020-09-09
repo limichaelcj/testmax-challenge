@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
 
-  devise_scope :user do
-    post 'users/signup', to: 'devise/registrations#create'
-  end
+  # pages
+  get '/success', to: 'pages#success'
+
+  # user
+  resources :user, only: [:create]
 
 end
