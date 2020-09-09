@@ -13,3 +13,37 @@
 .has-line-height-2 {
   line-height: $body-line-height;
 }
+
+// headings
+
+[class^="heading-"],
+[class*=" heading-"] {
+  font-family: $family-secondary;
+}
+
+.heading-1 {
+  font-weight: $weight-heavy;
+  line-height: $single-line-height;
+}
+
+.subheading {
+  font-size: $size-5;
+  font-family: $family-primary;
+  font-weight: $weight-semibold;
+  line-height: $single-line-height;
+}
+
+.block-header {
+  text-align: center;
+  padding: 1rem;
+  display: block;
+  font-weight: $weight-bold;
+}
+
+// paragraphs
+
+.text-emphasis {
+  font-weight: $weight-semibold;
+  font-size: inherit;
+  margin-bottom: 1rem;
+}

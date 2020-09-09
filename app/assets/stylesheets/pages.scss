@@ -1,6 +1,8 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$home-p-margin: 1.6rem;
+$home-text-column-padding: 1.2rem;
 
 .home-content {
   padding: 0 4rem;
@@ -8,5 +10,21 @@
   .column {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+.home-text {
+
+  &, .home-p:not(:first-child) {
+    margin-top: $home-p-margin;
+  }
+
+  .column {
+    &:first-of-type {
+      padding-right: $home-text-column-padding;
+    }
+    &:last-of-type {
+      padding-left: $home-text-column-padding;
+    }
   }
 }
