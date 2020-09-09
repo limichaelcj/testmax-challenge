@@ -26,8 +26,14 @@
   line-height: $single-line-height;
 }
 
+$subheading-size: $size-5;
+
+.subheading-size {
+  font-size: $subheading-size;
+}
+
 .subheading {
-  font-size: $size-5;
+  font-size: $subheading-size;
   font-family: $family-primary;
   font-weight: $weight-semibold;
   line-height: $single-line-height;

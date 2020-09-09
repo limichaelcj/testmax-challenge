@@ -1,0 +1,22 @@
+.actions {
+  margin-top: 1.2rem;
+}
+
+.button {
+  font-size: .9em;
+  height: 3em;
+  border-radius: 6px;
+  font-weight: $weight-semibold;
+
+  &.minwidth {
+    min-width: 16em;
+  }
+
+  &.inline:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  &.is-outlined {
+    border-width: 2px;
+  }
+}
