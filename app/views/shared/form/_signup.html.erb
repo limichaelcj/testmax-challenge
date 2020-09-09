@@ -1,0 +1,10 @@
+<%= form_for(resource, as: resource_name, url: user_index_path, html: { class: local_assigns[:classname] }) do |f| %>
+
+  <%= render partial: 'shared/form/field', locals: { field: :name, label: "Full Name", form: f, resource: resource } %>
+  <%= render partial: 'shared/form/field', locals: { field: :email, label: "Email Address", form: f, resource: resource} %>
+  <%= render partial: 'shared/form/field', locals: { field: :phone, label: "Phone Number", form: f, resource: resource } %>
+
+  <div class="actions">
+    <%= f.submit "Complete Signup", class: "button is-primary is-fullwidth" %>
+  </div>
+<% end %>

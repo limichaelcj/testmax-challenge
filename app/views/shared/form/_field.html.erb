@@ -1,0 +1,11 @@
+<div class="field">
+  <%= form.label field, label, class: "label" %>
+  <div class="control">
+    <%= form.text_field field, class: "input#{' is-danger' if !resource.errors[field].empty?}" %>
+    <% if !resource.errors[field].empty? %>
+    <div class="form-field-error-message">
+      <%= resource.errors.full_messages_for(field)[0] %>
+    </div>
+    <% end %>
+  </div>
+</div>
