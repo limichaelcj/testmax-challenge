@@ -23,31 +23,7 @@
           </p>
         </div>
         <div class="column is-half px-6 py-4">
-          <form class="landing">
-            <div class="field">
-              <label class="label">Full Name</label>
-              <div class="control">
-                <input class="input" />
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Email Address</label>
-              <div class="control">
-                <input class="input" />
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Phone Number</label>
-              <div class="control">
-                <input class="input" />
-              </div>
-            </div>
-            <input
-              type="submit"
-              class="button is-primary is-fullwidth"
-              value="Complete Signup"
-            />
-          </form>
+          <%= render partial: "shared/signup", locals: { resource: @user, resource_name: :user, classname: 'landing' } %>
         </div>
       </div>
     </div>
