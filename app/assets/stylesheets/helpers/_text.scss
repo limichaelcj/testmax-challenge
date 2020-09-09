@@ -3,9 +3,13 @@
 }
 
 .has-text-weight-heavy {
-  font-weight: 900 !important;
+  font-weight: 800 !important;
 }
 
 .has-line-height-1 {
-  line-height: 1.2;
+  line-height: $single-line-height;
+}
+
+.has-line-height-2 {
+  line-height: $body-line-height;
 }

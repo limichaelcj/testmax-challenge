@@ -12,6 +12,7 @@ $banner-card-offset: 18rem;
 .banner-card-container {
   position: relative;
   height: $banner-card-height - $banner-card-offset;
+  margin-bottom: 6rem;
 }
 
 .banner-card {

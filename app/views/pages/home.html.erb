@@ -1,7 +1,6 @@
 <%= render 'shared/banner/image' %>
 
 <section class="container is-desktop">
-
   <%= render layout: 'shared/banner/card', locals: { class: 'graphic-bg' } do %>
     <header>
       <h2 class="px-2 py-4 has-text-centered has-text-weight-bold">
@@ -28,5 +27,41 @@
       </div>
     </div>
   <% end %>
+</section>
 
+<section class="container is-desktop">
+  <div class="home-content">
+    <div class="columns">
+      <div class="column is-half">
+        <h2 class="is-family-secondary has-text-weight-bold is-size-3 has-line-height-1">
+          What We'll Cover in the LSAT Basics Webinar.
+        </h2>
+      </div>
+    </div>
+
+    <div class="columns pt-4">
+      <div class="column is-size-6">
+        <p>
+          Come learn all about the LSAT: What it tests, how it is scored and even
+          tackle some real LSAT questions from an instructor who scored in the
+          99th percentile on the exam.
+        </p>
+        <p class="mt-4">
+          Everyone is welcome, so invite your friends! You must register for the
+          event to attend, so RSVP today!
+        </p>
+      </div>
+      <div class="column">
+        <p class="has-text-weight-semibold is-block mb-3">
+          Attendees will get a discount on LSATMax courses and tutoring!
+        </p>
+        <h6 class="has-text-secondary">
+          Hosted By
+        </h6>
+        <p class="has-text-weight-semibold is-block mb-3">
+          Chapman's Pre-Law Society + <%= render 'shared/logo', size: :sm %>
+        </p>
+      </div>
+    </div>
+  </div>
 </section>

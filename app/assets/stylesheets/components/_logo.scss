@@ -1,0 +1,15 @@
+$logo-small: 1.1em;
+$logo-large: 2rem;
+
+[class^="logo-"],
+[class*=" logo-"] {
+  width: auto;
+}
+
+.logo-sm {
+  height: $logo-small;
+}
+
+.logo-lg {
+  height: $logo-large;
+}

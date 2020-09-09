@@ -12,11 +12,18 @@
  *
  */
 
+// get fonts from google cdn
 @import url('//fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans:400,500,600,700,800&display=swap');
 
 // framework base styles
+// - import index because order is important
 @import 'config/index';
+
 // app styles
-@import 'components/index';
+@import 'components/**/*';
+
 // prioritize helper styles
-@import 'helpers/index';
+@import 'helpers/**/*';
+
+// view-specific styles
+@import "/\*"
