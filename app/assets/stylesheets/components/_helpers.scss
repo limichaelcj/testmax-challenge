@@ -1,3 +1,11 @@
 .has-text-secondary {
-    color: $text-secondary;
+  color: $text-secondary;
+}
+
+.has-text-weight-heavy {
+  font-weight: 900 !important;
+}
+
+.has-line-height-1 {
+  line-height: 1.2;
 }

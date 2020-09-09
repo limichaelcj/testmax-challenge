@@ -2,16 +2,22 @@
 
 // update fonts
 $family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-heading: "Montserrat";
 // update colors
 
 
 // 2. Derived variables
 $primary: #B93506;
-$text-light: #B2B2B2;
 $info: #2CC5FF;
 
-// 3. Custom Colors
+$family-primary: $family-sans-serif;
+$family-secondary: $family-heading;
+
+// 3. Custom Variables
+$primary-dark: #7E2317;
 $text-secondary: #B2B2B2;
+
+$container-landing-width: 900px;
 
 // $linkedin: #0077b5;
 // $linkedin-invert: findColorInvert($linkedin);
