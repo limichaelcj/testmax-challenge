@@ -2,7 +2,9 @@
 @import "sass/utilities/functions";
 
 @import "./variables";
+@import "sass/utilities/derived-variables";
 
+// html base styles (e.g. body)
 @import 'base';
 
 @import "bulma";

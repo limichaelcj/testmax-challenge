@@ -1,19 +1,19 @@
-// 1. Set your own initial variables
+/* INITIAL VARIABLES */
 
 // update fonts
 $family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-heading: "Montserrat";
 // update colors
 
-
-// 2. Derived variables
+/* DERIVED VARIABLES */
 $primary: #B93506;
 $info: #2CC5FF;
 
+$text: $black;
 $family-primary: $family-sans-serif;
 $family-secondary: $family-heading;
 
-// 3. Custom Variables
+/* CUSTOM VARIABLES */
 $primary-dark: #7E2317;
 $text-secondary: #B2B2B2;
 
@@ -28,7 +28,7 @@ $container-landing-width: 900px;
 
 // 5. Add new color variables to the color map.
 
-// @import "sass/utilities/derived-variables";
+
 
 // $addColors: (
 //   "twitter":($twitter, $twitter-invert),
