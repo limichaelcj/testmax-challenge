@@ -13,7 +13,11 @@ class UserController < ApplicationController
   private
 
   def strong_params
-    params.require(:user).permit(:name, :email, :phone)
+    data = params.require(:user).permit(:full_name, :email, :pnum)
+    names = data[:full_name].split(/\s+/)
+    data[:first_name] = names[0]
+    data[:last_name] = names[1]
+    data
   end
 
 end

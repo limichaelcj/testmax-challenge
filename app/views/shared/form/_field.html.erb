@@ -1,11 +1,14 @@
+<% provided_error = local_assigns[:error] || false %>
+<% error_message = provided_error ? provided_error : !resource.errors[field].empty? ? resource.errors.full_messages_for(field)[0] : false %>
+
 <div class="field">
   <%= form.label field, label, class: "label" %>
   <div class="control">
     <%= form.text_field field, class: "input#{' is-danger' if !resource.errors[field].empty?}" %>
-    <% if !resource.errors[field].empty? %>
-    <div class="form-field-error-message">
-      <%= resource.errors.full_messages_for(field)[0] %>
-    </div>
+    <% if error_message %>
+      <div class="form-field-error-message">
+        <%= error_message %>
+      </div>
     <% end %>
   </div>
 </div>
