@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   # user
   resources :user, only: [:create]
 
+  get '*path' => redirect('/')
+
 end
