@@ -6,8 +6,11 @@ Clone the project from Github:
 
 	git clone https://github.com/mcli830/testmax-challenge.git
 
-If you have MySQL on your system, you can run the project in _development_ mode. Otherwise set the following environment variables to run the project in _production_ mode, which will access the remote MySQL server:
+In the project's root directory, install Ruby dependencies with:
 
+	bundle install
+
+If you have MySQL on your system, you can run the project in _development_ mode. Otherwise set the following environment variables to run the project in _production_ mode, which will access the remote MySQL server:
 	
 	export RAILS_ENV=production
 	export MYSQL_DATABASE_PASSWORD=password
@@ -31,7 +34,6 @@ If you are using Windows, setting environment variables requires different synta
 
 	$env:RAILS_ENV = 'production'
 	$env:MYSQL_DATABASE_PASSWORD = 'password'
-
 
 ###### Command Prompt
 
