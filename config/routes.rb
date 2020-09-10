@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # user
   resources :user, only: [:create]
 
+  # route 404 to index
   get '*path' => redirect('/')
 
 end
