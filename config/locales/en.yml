@@ -42,6 +42,6 @@ en:
         user:
           attributes:
             first_name:
-              blank: "is required."
+              blank: "is required"
             last_name:
-              blank: "is required."
+              blank: "is required"
